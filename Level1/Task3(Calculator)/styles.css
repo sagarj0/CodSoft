@@ -35,7 +35,7 @@ main {
 }
 
 #result-area {
-  width: 100%;
+  width: 300px;
   flex: 1 0 110px;
 }
 
@@ -58,6 +58,7 @@ input {
   height: 100%;
   border: 2px solid #eee;
   background-color: #39494d;
+  font-size: 50px;
 }
 
 button {

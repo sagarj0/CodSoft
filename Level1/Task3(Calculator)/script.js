@@ -17,14 +17,23 @@ keys.addEventListener("click", function (event) {
   if (val) {
     if (!terminate.includes(val)) {
       expression.push(val);
-      console.log(val);
+      resultBox.value = expression.join("");
     } else {
-      if (val === "AC") expression = [];
-      else if (val === "C") expression.pop();
-      else if (val === "=") {
-        answer = eval(expression.join(""));
-        console.log(answer);
-      } else if (val === "Ans") console.log(answer);
+      if (val === "AC") {
+        expression = [];
+        resultBox.value = 0;
+      } else if (val === "C") {
+        expression.pop();
+        resultBox.value = expression.join("");
+      } else if (val === "=") {
+        answer = eval(expression.join("")) || 0;
+        resultBox.value = answer;
+        expression = [];
+      } else if (val === "Ans") {
+        expression.push(answer);
+        resultBox.value = expression.join("");
+      } else if (val === "sqrt") {
+      }
     }
   }
 });

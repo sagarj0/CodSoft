@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <title>Calculator</title>
   <body>
     <main>
       <div class="calculator">
@@ -10,30 +11,30 @@
           <input type="text" id="result" readonly />
         </section>
         <section id="keys">
-          <button>(</button>
-          <button>)</button>
-          <button>Ans</button>
-          <button>C</button>
-          <button>AC</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>%</button>
-          <button>√</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>x</button>
-          <button>÷</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>.</button>
-          <button>^</button>
-          <button>0</button>
-          <button>+</button>
-          <button>-</button>
-          <button id="equal">=</button>
+          <button data-value="(">(</button>
+          <button data-value=")">)</button>
+          <button data-value="Ans">Ans</button>
+          <button data-value="C">C</button>
+          <button data-value="AC">AC</button>
+          <button data-value="7">7</button>
+          <button data-value="8">8</button>
+          <button data-value="9">9</button>
+          <button data-value="%">%</button>
+          <button data-value="sqrt">√</button>
+          <button data-value="4">4</button>
+          <button data-value="5">5</button>
+          <button data-value="6">6</button>
+          <button data-value="*">x</button>
+          <button data-value="/">÷</button>
+          <button data-value="1">1</button>
+          <button data-value="2">2</button>
+          <button data-value="3">3</button>
+          <button data-value=".">.</button>
+          <button data-value="pow">^</button>
+          <button data-value="0">0</button>
+          <button data-value="+">+</button>
+          <button data-value="-">-</button>
+          <button data-value="=" id="equal">=</button>
         </section>
       </div>
     </main>

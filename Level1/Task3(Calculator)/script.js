@@ -1,16 +1,11 @@
 "use strict";
 
 const resultBox = document.querySelector("#result");
-// console.log(resultBox);
-const btns = document.querySelectorAll("button");
 
 const keys = document.querySelector("#keys");
 
 const terminate = ["AC", "=", "C", "Ans", "sqrt", "pow", "%"];
 
-const dataValues = Object.values(btns).map((btn) => btn.dataset.value);
-
-let result = 0.0;
 let expression = [];
 let answer = 0;
 let temp;
@@ -41,12 +36,13 @@ keys.addEventListener("click", function (event) {
         temp = expression.join("");
         expression = [];
         expression.push(`Math.pow(${temp},`);
+      } else if (val === "%") {
+        temp = expression[expression.length - 1];
+        expression.push("%");
+        resultBox.value = expression.join("");
+        expression.splice(-2);
+        expression.push(temp / 100);
       }
     }
   }
 });
-
-console.log(btns);
-console.log(dataValues);
-
-console.log(eval("Math.sqrt(2)"));

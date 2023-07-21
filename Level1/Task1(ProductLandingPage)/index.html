@@ -3,31 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Landing Page</title>
+    <title>Green Tea Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <header>
-        <img />
-        <nav>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </header>
+    <nav>
+      <div>
+        <img href="#hero-section" class="logo" src = images/logo.jpg alt = "Tea
+        logo" id = "logo"/>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#benefits-section">Benefits</a></li>
+        <li><a href="#testimonials-section">Testimonials</a></li>
+        <li><a href="#cta-section">Shop Now</a></li>
+      </ul>
+      <!-- <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div> -->
+    </nav>
 
-      <main>
-        <h2></h2>
-        <div class="form">
-          <h3></h3>
-          <form id="form" action="#">
-            <input />
-            <button></button>
-          </form>
-        </div>
-      </main>
-    </div>
+    <header id="hero-section">
+      <h1>Experience the Refreshing Power of Green Tea</h1>
+      <p>Discover the health benefits of our premium green tea</p>
+      <a href="#" class="cta-button">Shop Now</a>
+    </header>
+
+    <section id="benefits-section" class="benefits">
+      <h2>Benefits of Green Tea</h2>
+      <ul>
+        <li>
+          <img src="icons/antioxidants.png" alt="Antioxidants" />
+          <p>Rich in antioxidants for overall well-being</p>
+        </li>
+        <li>
+          <img src="icons/metabolism.png" alt="Metabolism" />
+          <p>Boosts metabolism and aids in weight management</p>
+        </li>
+        <li>
+          <img src="icons/relaxation.png" alt="Relaxation" />
+          <p>Promotes relaxation and reduces stress</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="testimonials-section" class="testimonials">
+      <h2>What Our Customers Say</h2>
+      <div class="testimonial">
+        <img src="user_images/user1.jpg" alt="Customer 1" />
+        <blockquote>
+          "I started drinking green tea daily, and it has made a noticeable
+          difference in my energy levels and focus. I'm a fan!"
+          <cite>- Emily S.</cite>
+        </blockquote>
+      </div>
+      <div class="testimonial">
+        <img src="user_images/user2.jpg" alt="Customer 2" />
+        <blockquote>
+          "The matcha green tea from this brand is the best I've ever tasted.
+          It's smooth and refreshing."
+          <cite>- David L.</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="cta-section" class="cta">
+      <h2>Ready to Try Our Green Tea?</h2>
+      <p>Experience the goodness of our premium green tea today!</p>
+      <a href="#" class="cta-button">Get Yours Now</a>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Green Tea Company. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

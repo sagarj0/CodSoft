@@ -1,0 +1,89 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: #fff 1px solid;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  color: #eee;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #9ef39e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+}
+
+.logo {
+  max-height: 80px;
+  border-radius: 50%;
+  mix-blend-mode: color-burn;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.logo a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Mobile Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+}
+
+/* @media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #4caf50;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .burger {
+    display: block;
+  }
+} */
+
+/* Hero Section, Benefits, Testimonials, and CTA - Same styles as before */
+
+/* Footer Styles - Same styles as before */

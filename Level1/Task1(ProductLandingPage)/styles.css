@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: #fff 1px solid;
+  /* border: #fff 1px solid; */
 }
 
 body {
@@ -18,12 +18,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 20px; */
+  /* max-height: 80px; */
+  margin: 20px;
 }
 
 .logo {
-  max-height: 80px;
-  border-radius: 50%;
+  max-height: 70px;
+  /* object-fit: cover; */
   mix-blend-mode: color-burn;
 }
 

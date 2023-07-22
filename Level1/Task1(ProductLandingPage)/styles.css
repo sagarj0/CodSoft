@@ -5,11 +5,14 @@
   box-sizing: border-box;
   /* border: #fff 1px solid; */
 }
-
+html {
+  /* width: 100%; */
+}
 body {
   font-family: Arial, sans-serif;
-
+  width: 90%;
   color: #eee;
+  margin: auto;
 }
 
 /* Navigation Bar */
@@ -19,7 +22,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   /* max-height: 80px; */
-  margin: 20px;
+  /* margin: 20px; */
 }
 
 .logo {

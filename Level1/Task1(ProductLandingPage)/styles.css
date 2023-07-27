@@ -1,93 +1,180 @@
-/* Reset default margin and padding for all elements */
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #8fee3c;
+  --color-tertiary: #f5ce34;
+  --color-background: #ddd;
+  --gradient-primary: linear-gradient(270deg, #4bebae, #9be15d);
+  --gradient-secondary: linear-gradient(90deg, #1115, 10%, #2225);
+  --width: 80px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: inherit;
+  text-shadow: 2px 2px 2px #222;
   /* border: #fff 1px solid; */
 }
-html {
-  /* width: 100%; */
-}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 90%;
-  color: #eee;
+  color: #222;
   margin: auto;
+  background-color: var(--color-background);
+
+  background-attachment: fixed;
 }
 
 /* Navigation Bar */
-nav {
-  background-color: #9ef39e;
+.brand {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* max-height: 80px; */
-  /* margin: 20px; */
-}
-
-.logo {
-  max-height: 70px;
-  /* object-fit: cover; */
-  mix-blend-mode: color-burn;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-right: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.logo a {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* Mobile Menu */
-.burger {
-  display: none;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
+nav {
+  width: inherit;
+
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
-/* @media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: #4caf50;
-  }
+.logo {
+  max-height: var(--width);
 
-  .nav-links li {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
+  margin-left: 30px;
+}
 
-  .burger {
-    display: block;
-  }
-} */
+.nav-links {
+  width: 45%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
 
-/* Hero Section, Benefits, Testimonials, and CTA - Same styles as before */
+.nav-links a,
+footer a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--color-tertiary);
+  text-decoration: none;
+  /* margin: 10px; */
+}
 
-/* Footer Styles - Same styles as before */
+.nav-links a:hover,
+footer a:hover {
+  color: var(--color-primary);
+}
+
+main {
+  margin-top: calc(var(--width) + 40px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--width);
+  justify-content: space-around;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.highlight {
+  display: inline-block;
+  color: var(--color-secondary);
+  margin: 5px 0;
+}
+
+#hero-section {
+  flex-basis: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.src-image {
+  width: 40%;
+  border-radius: 0 0 100px;
+}
+
+p {
+  padding: 40px 0;
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 50px 0;
+  padding: 20px 0;
+}
+
+cite {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+#benefits-section li,
+.testimonial {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.customer-image {
+  width: 5%;
+  border-radius: 5px;
+}
+
+.shop {
+  display: block;
+  margin: auto;
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  border-radius: 20px;
+  background: #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer p {
+  padding: unset;
+}

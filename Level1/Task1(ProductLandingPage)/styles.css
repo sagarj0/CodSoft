@@ -163,6 +163,7 @@ footer {
   justify-content: center;
   gap: 20px;
   padding: 50px;
+  margin: 10px;
 }
 footer ul {
   display: flex;

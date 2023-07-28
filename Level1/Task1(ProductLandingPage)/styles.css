@@ -13,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   color: inherit;
-  /* text-shadow: 2px 2px 2px #222; */
+  /* text-shadow: 1px 1px 1px #222; */
   /* border: #fff 1px solid; */
 }
 
@@ -39,7 +39,7 @@ body {
 
 nav {
   width: inherit;
-
+  box-shadow: 3px 3px 5px var(--color-secondary);
   background-color: var(--color-background);
   display: flex;
   justify-content: space-between;

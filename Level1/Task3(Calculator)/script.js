@@ -11,7 +11,8 @@ let answer = 0;
 let temp;
 
 keys.addEventListener("click", function (event) {
-  const val = event.target.getAttribute("data-value");
+  const val = event.target.dataset.value;
+  console.log(val);
   if (val) {
     if (!terminate.includes(val)) {
       expression.push(val);

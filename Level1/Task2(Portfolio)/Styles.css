@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #ddd;
-  --secondary-color: #486459;
+  --primary-color: #cecece;
+  --secondary-color: #d7d8d7;
   --text-color: #fff;
-  --footer-color: #bbb;
+  --secondary-text-color: #296951;
 }
 
 * {
@@ -15,6 +15,7 @@
 body {
   font-family: "Poppins", Arial, sans-serif;
   line-height: 1.6;
+  background-color: #eee;
 }
 
 header {
@@ -49,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--text-color);
+  /* color: var(--text-color); */
   text-decoration: none;
 }
 
@@ -118,9 +119,10 @@ section h2 {
 #projects a {
   background-color: var(--secondary-color);
   border-radius: 10px;
+  overflow: hidden;
   width: 90%;
   height: 300px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   /* width: 300px; */
   /* text-decoration: none; */
 }
@@ -129,19 +131,19 @@ a {
   text-decoration: none;
   text-align: center;
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
 }
 
 a img {
   width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   height: 80%;
   padding: 0;
   object-fit: fill;
 }
 
 #projects a {
-  box-shadow: 4px 4px 3px #1f1f1f;
+  /* box-shadow: 4px 4px 3px #1f1f1f; */
 }
 
 .btn {
@@ -165,15 +167,13 @@ section h3 {
   gap: 3.5rem;
   flex-wrap: wrap;
   margin: 2rem 0;
+  color: ;
 }
 
 footer {
-  background-color: #d8d3d3;
+  background-color: var(--primary-color);
   padding: 10px;
   margin: 10px;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
+  border-radius: 10px;
 }

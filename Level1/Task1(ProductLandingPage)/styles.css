@@ -39,7 +39,7 @@ body {
 
 nav {
   width: inherit;
-  box-shadow: 1px 1px 1px var(--color-secondary);
+  /* box-shadow: 1px 1px 1px var(--color-secondary); */
   background-color: var(--color-background);
   display: flex;
   justify-content: space-between;
